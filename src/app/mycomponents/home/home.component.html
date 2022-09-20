@@ -1,0 +1,36 @@
+<div class="main-body">
+
+    <div class="top-heading">
+        <h1>These are the Users</h1>
+    </div>
+
+    <div class="list-body">
+        <div class="add-btn">
+            <a mat-raised-button color="primary" class="add-user" routerLink="/adduser">Add User</a>
+        </div>
+
+      
+        <div id="form-body" *ngFor="let item of userData; let i=index">
+            <!-- <div id="item{{i}}">Item {{i}}</div> -->
+            <div class="main-container" id="item{{i}}">
+                <mat-card>User Name:
+                    <div class="container">
+                        <div class="box1">
+                            <h1>{{item.u_fname}} {{item.u_mname}} {{item.u_lname}}<!-- {{item.u_id}}--></h1>
+                        </div>
+                        <div class="box2">
+                            <!-- <button  mat-raised-button color="primary" [routerLink]="['/edituser', item.u_id]">Edit</button> -->
+                            <button  mat-raised-button color="primary" [routerLink]="['/edituser', item.u_id]">Edit</button>
+                            <!-- <a mat-raised-button color="warn" [routerLink]="['http://localhost:3000/delete-user', item.u_id]">Delete</a> -->
+                            <button mat-raised-button color="warn" (click)="deleteUser(item.u_id)" >Delete</button>
+                        </div>
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+        
+    </div>
+
+
+</div>
+

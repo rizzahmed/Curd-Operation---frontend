@@ -1,0 +1,64 @@
+h1{
+    text-align: center;
+    margin: 20px;
+    font-weight: 500;
+}
+
+.container{
+    /* background-color: rgb(110, 236, 236); */
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.example-full-width{
+    margin-top: 20px;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+}
+
+
+.field{
+    width: 100%;
+    /* margin: 20px; */
+}
+
+.field-box{
+    margin-top: 10px;
+}
+
+span{
+    color: red;
+}
+
+.heading{
+    text-align: center;
+}
+
+
+.example-form{
+    /* background-color: #F8F8F8; */
+    margin: auto;
+    width: 50%;    
+}
+
+.btn{
+    background-color: rgb(238, 235, 235);
+    display: flex;
+    justify-content: space-between;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+a{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+

@@ -1,0 +1,58 @@
+.main-body{
+    /* background-color: #7bff00; */
+    max-width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.top-heading{
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+h1{
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.list-body{
+    /* background-color: blueviolet; */
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.add-btn{
+    margin-bottom: 10px;
+}
+
+mat-card{
+    background-color: #F8F8F8;
+}
+
+.box1{
+    height: 20px;
+    line-height: 10px; /* <-- this is what you must define */
+}
+
+.box2{
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    width: 145px;
+}
+
+.container{
+    /* background-color: chocolate; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.main-container{
+    /* background-color: #c2c2c2; */
+    margin: 10px 0 20px 0;
+}

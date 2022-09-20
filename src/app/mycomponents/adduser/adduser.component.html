@@ -1,0 +1,50 @@
+
+
+<div class="heading">
+    <h1>Add a new User</h1>
+</div>
+
+
+
+<div class="container">
+    <div class="btn">
+        <a  mat-raised-button color="primary" routerLink="/">Home</a>
+    </div>
+    <form class="example-form" #usersForm="ngForm" (ngSubmit)="somefunc(usersForm.value); usersForm.resetForm()" >
+    
+        <div class="name-field">
+            <div class="field-box">
+                <label>First Name<span>*</span></label>
+                <input class="field" required name="fname" [(ngModel)]="data.fname">
+            </div>
+
+            <div class="field-box">
+                <label>Middle Name</label>
+                <input class="field" required name="mname" [(ngModel)]="data.mname"><br>
+            </div>
+            
+            <div class="field-box">
+                <label>Last Name<span>*</span></label><br>
+                <input class="field" required name="lname" [(ngModel)]="data.lname"><br>
+            </div>
+            
+            <div class="field-box">
+                <label>Email<span>*</span></label><br>
+                <input type="email" class="field" required name="email" [(ngModel)]="data.email"><br>
+            </div>
+            
+            <div class="field-box">
+                <label>Password<span>*</span></label>
+                <input class="field" required name="password" [(ngModel)]="data.pswd">
+            </div>
+        </div>
+        
+        
+        
+            <button mat-flat-button color="primary" class="example-full-width" type="submit">Add</button>
+            <!-- <a  mat-raised-button color="primary" routerLink="/">Home</a> -->
+        
+    </form>
+    <!-- {{data | json}} -->
+</div>
+  

@@ -1,0 +1,75 @@
+<h1>Update a User</h1>
+<!-- <h1>{{name}}</h1> -->
+<div class="container">
+
+    <div class="btn">
+        <a  mat-raised-button color="primary" routerLink="/">Home</a>
+    </div>
+    
+    <form class="example-form" #usersForm="ngForm" (ngSubmit)="somefunc(userData[0].u_fname,userData[0].u_mname,userData[0].u_lname,userData[0].u_email,userData[0].u_password);">
+    
+        <div class="name-field" > 
+            <div class="field-box">
+                <label>First Name<span>*</span></label>
+
+                <!-- <div *ngIf='userData[0]?.u_fname'>
+                    <input type="text" class="field" id="fname" [(ngModel)]="userData[0].u_fname" name="fname" [ngModelOptions]="{standalone: true}">
+                </div> -->
+
+                <input  class="field" required [(ngModel)] = "userData[0].u_fname" [ngModelOptions]="{standalone: true}">
+
+            </div>
+
+            <div class="field-box" >
+                <label>Middle Name</label>
+
+                <!-- <div *ngIf='userData[0]?.u_mname'>
+                    <input matInput type="text" class="field" id="mname" required [(ngModel)]="userData[0].u_mname" name="mname" [ngModelOptions]="{standalone: true}">
+                </div> -->
+
+                <!-- <ng-template #elseBlockShow>
+                    <input type="text" class="field" id="mname" required [(ngModel)]="u_mid_name" name="mname" [ngModelOptions]="{standalone: true}">
+                </ng-template> -->
+                <!-- <div *ngIf='userData[0].u_mname==""'
+                    <input type="text" class="field" id="mname" required [(ngModel)]="userData[0].u_mname" name="mname" [ngModelOptions]="{standalone: true}">
+                </div> -->
+
+                <input class="field" required [(ngModel)] = "userData[0].u_mname" [ngModelOptions]="{standalone: true}"><br>
+            </div>
+            
+            <div class="field-box">
+                <label>Last Name<span>*</span></label><br>
+
+                <!-- <div  *ngIf='userData[0]?.u_lname'>
+                    <input type="text" class="field" id="lname" required [(ngModel)]="userData[0].u_lname" name="lname" [ngModelOptions]="{standalone: true}">
+                </div> -->
+
+                <input class="field" required [(ngModel)] ="userData[0].u_lname" [ngModelOptions]="{standalone: true}"><br>
+            </div>
+            
+            <div class="field-box">
+                <label>Email<span>*</span></label><br>
+
+                <!-- <div  *ngIf='userData[0]?.u_email'>
+                    <input type="email" class="field" id="email" required [(ngModel)]="userData[0].u_email" name="email" [ngModelOptions]="{standalone: true}">
+                </div> -->
+
+                <input type="email" class="field" required [(ngModel)]="userData[0].u_email" [ngModelOptions]="{standalone: true}"><br>
+            </div>
+            
+            <div class="field-box">
+                <label>Password<span>*</span></label>
+
+                <!-- <div  *ngIf='userData[0]?.u_password'>
+                    <input type="text" class="field" id="password" required [(ngModel)]="userData[0].u_password" name="password" [ngModelOptions]="{standalone: true}">
+                </div> -->
+
+                <input class="field" required [(ngModel)]="userData[0].u_password" [ngModelOptions]="{standalone: true}">
+            </div>
+        </div> 
+
+        <!-- <a mat-flat-button color="primary" class="example-full-width" routerLink="/edituser">Update</a> -->
+        <button mat-flat-button color="primary" class="example-full-width">Update</button>
+    </form>
+</div>
+  
